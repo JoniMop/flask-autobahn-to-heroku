@@ -69,7 +69,7 @@ def rpc_divide(a=None, b=None):
         "b": b,
         "result": result,
     }
-    return render_template('divide.html')
+    return render_template('divide.html', **data)
 
 
 @app.route('/')
